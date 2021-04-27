@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  
+    .attribution { font-size: 15px; text-align: center; }
+    .attribution a { font-size: 15px;
+    color: green;
+     
+     }
+    .container{
+      display: flex;
+       margin: 90px ; 
+      margin-left: 180px;
+      border-radius: 25px;
+      /* border:3px solid springgreen;  */
+      width: 71%;
+      height: 60%;
+        flex-wrap: wrap;   
+        /* justify-content: space-around;    */
+         /* justify-content: space-evenly;   */ 
+          /* justify-content: space-between;    */
+
+    
+    }
+    .Box{
+      width: 310px;
+      height: 420px;
+      /* border: 2px solid green; */
+       
+    
+      
+      
+      
+     }
+
+      #item1 img{
+       width: 64px;
+       height: 40px; 
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 30px;
+    
+    }  
+         
+  
+     #item2 img{
+       width: 64px;
+       height: 40px; 
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 30px;
+    
+    }     
+    
+     #item3 img{
+       width: 64px;
+       height: 40px; 
+      display: inline-block;
+      margin: 5px 5px;
+      margin-top: 10px;
+      margin-left: 30px;
+    
+    }
+    #item1{
+      background-color:  hsl(31, 77%, 52%);
+      border-top-left-radius: 9px;
+      /* border-bottom-left-radius: 9px; */
+    
+      
+      
+
+    }
+    #item2{
+      background-color:  hsl(184, 100%, 22%);
+      
+    }
+    #item3{
+      background-color: hsl(179, 100%, 13%);
+      border-right: 25px;
+      /* border-top-right-radius: 9px; */
+      border-bottom-right-radius: 9px;
+     
+      
+      
+    
+    }
+    h1{
+      text-align: center;
+      color: hsl(0, 0%, 95%);
+      font-style: italic;
+    }
+    p{
+      text-align: center;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+    #btn1{
+      text-align: center;
+     background-color: hsl(0, 0%, 95%);
+     color: hsl(31, 77%, 52%);
+     margin: 60px 70px;
+     border-radius: 23px;
+     padding: 8px 12px;
+    }
+    #btn2{
+      text-align: center;
+     background-color: hsl(0, 0%, 95%);
+     color: hsl(184, 100%, 22%);
+     margin: 60px 70px;
+     border-radius: 23px;
+     padding: 8px 12px;
+      
+    }
+    #btn3{
+      
+     background-color: white;
+     color:  hsl(179, 100%, 13%);
+     margin: 60px 70px;
+     border-radius: 23px;
+     padding: 8px 12px;
+     
+      
+    }
+    #btn1:hover{
+      color:white;
+    
+      background-color:hsl(31, 77%, 52%) ;
+    }
+    #btn2:hover{
+      color:white;
+      
+      background-color:hsl(184, 100%, 22%) ;
+    }
+    #btn3:hover{
+      color:white;
+      
+      background-color:hsl(184, 100%, 22%) ;
+    }
+    body{
+      background-color:  hsl(0, 0%, 95%);
+    }
+    p{
+      padding: 7px 7px;
+      font-size: 19px;
+
+    }
+   @media(max-width:360px ){
+    #item1{
+
+   border-top-right-radius: 9px;
+   border-top-left-radius: 9px;
+    }
+    #item3{
+      border-bottom-left-radius: 9px;
+      border-bottom-right-radius: 9px;
+
+    }
+    .container{
+        height: 1200px;
+        margin-left: 15%;
+        
+
+    }
+    .attribution a{
+        text-align: center;
+    }
+    }
+  
+   
+    
+  
+    
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+ <div class="Box" id="item1"><img src="/images/icon-luxury.svg" alt=""> <h1>Sedans</h1> <br>
+ <p> Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.</p>
+  <button id="btn1">Learn More</button>
+  
+   </div>
+ 
+
+  <div class="Box" id="item2">
+    <img src="/images/icon-luxury.svg" alt=""> <h1>SUVs</h1><br>
+  <p> Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.</p>
+  <button id="btn2">Learn More</button>
+  </div>
+
+  <div class="Box" id="item3"> <img src="/images/icon-luxury.svg" alt=""><h1>Luxury</h1> <br>
+ <p> Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.</p>
+  <button id="btn3">Learn More</button>
+  
+
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">DIKSHA KUMARI</a>
+  </div>
+
+</body>
+</html>
